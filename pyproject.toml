@@ -1,0 +1,14 @@
+[project]
+name = "boscli"
+version = "1.3.0"
+description = "AWS BOS AI CLI"
+dependencies = [
+    "bos-ai == 1.3.0",
+]
+
+[project.scripts]
+boscli = "bos.cli.entry:main"
+
+[build-system]
+requires = ["uv_build>=0.8.22,<0.9.0"]
+build-backend = "uv_build"
