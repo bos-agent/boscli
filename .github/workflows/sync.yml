@@ -44,5 +44,3 @@ jobs:
           git add pyproject.toml uv.lock
           git commit -m "chore: sync with bos-ai v${{ steps.sync.outputs.new_version }}"
           git push origin main
-          git tag v${{ steps.sync.outputs.new_version }}
-          git push origin v${{ steps.sync.outputs.new_version }}
