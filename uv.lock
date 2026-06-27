@@ -145,7 +145,7 @@ wheels = [
 
 [[package]]
 name = "bos-ai"
-version = "1.5.0"
+version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -164,21 +164,21 @@ dependencies = [
     { name = "textual-autocomplete" },
     { name = "tomlkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/43/fd/7b533130f3127c7eeaddc704b210c9dff90fa30acb99742d8e5be2b5934e/bos_ai-1.5.0.tar.gz", hash = "sha256:c1daac37c1907b244e8393bf2b6c3d4e0cba6b7918e603a9193b6a12eb1652f7", size = 568753, upload-time = "2026-06-24T15:19:31.84Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1b/b6/72f5aa39e549e2713e24306ef19eeaa277ecf83ba991a3642578903e9c33/bos_ai-1.6.0.tar.gz", hash = "sha256:5608026096d199d5fc7df46887bef91bf0f9af2992781ad0800ff25265fa66bd", size = 581661, upload-time = "2026-06-26T16:44:33.133Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0c/eb/3d81f9930c152ff40b2f88483a4712584bd01913551b080244e9113b67a5/bos_ai-1.5.0-py3-none-any.whl", hash = "sha256:1b0ed708e8be67d4982ae2632c7af392b6fb313ac29aaa141f229d0e5159ae74", size = 252868, upload-time = "2026-06-24T15:19:30.447Z" },
+    { url = "https://files.pythonhosted.org/packages/9c/31/e732f0c1dbc17470d7ffcd2aa2eca398379d53c14001b7d54e1ea6404fbb/bos_ai-1.6.0-py3-none-any.whl", hash = "sha256:15984504b4080ce9d5f34f10ba46880d1af64785ed1aa0c92991e20037993c83", size = 256758, upload-time = "2026-06-26T16:44:31.749Z" },
 ]
 
 [[package]]
 name = "boscli"
-version = "1.5.0"
+version = "1.6.0"
 source = { editable = "." }
 dependencies = [
     { name = "bos-ai" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "bos-ai", specifier = "==1.5.0" }]
+requires-dist = [{ name = "bos-ai", specifier = "==1.6.0" }]
 
 [[package]]
 name = "brotli"
