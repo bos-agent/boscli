@@ -1,9 +1,9 @@
 [project]
 name = "boscli"
-version = "1.8.0"
+version = "1.10.0"
 description = "AWS BOS AI CLI"
 dependencies = [
-    "bos-ai == 1.8.0",
+    "bos-ai == 1.10.0",
 ]
 
 [project.scripts]
