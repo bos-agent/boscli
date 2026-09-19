@@ -39,10 +39,12 @@ def update_pyproject_toml(new_version: str) -> None:
         count=1
     )
 
-    # Update bos-ai dependency pin
+    # Update bos-ai dependency pin, preserving whatever extras it carries.
+    # bos-ai ships no console script as of 2.0.0, so this pin must keep its
+    # [cli,litellm,search] bracket for `boscli` to be a working command.
     content = re.sub(
-        r'"bos-ai\s*==\s*[^"]+"',
-        f'"bos-ai == {new_version}"',
+        r'"bos-ai(\[[^\]]*\])?\s*==\s*[^"]+"',
+        lambda m: f'"bos-ai{m.group(1) or ""} == {new_version}"',
         content,
         count=1
     )
