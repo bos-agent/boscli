@@ -1,9 +1,9 @@
 [project]
 name = "boscli"
-version = "2.3.0"
+version = "2.3.1"
 description = "BOS AI CLI"
 dependencies = [
-    "bos-ai[cli,litellm,search] == 2.3.0",
+    "bos-ai[cli,litellm,search] == 2.3.1",
 ]
 
 [project.scripts]

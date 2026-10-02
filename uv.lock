@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.13"
 
 [[package]]
@@ -158,7 +158,7 @@ wheels = [
 
 [[package]]
 name = "bos-ai"
-version = "2.3.0"
+version = "2.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -167,9 +167,9 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0b/f8/f184a42c36cee9b967babf82bf321ce3c5ef3bbebbb77f48ff1f53270148/bos_ai-2.3.0.tar.gz", hash = "sha256:a84f370d01fd6d0bfb29d3e2dcdb8aa0407a1d27df8d91497782c2ccfda8bb2d", size = 1250896, upload-time = "2026-09-26T21:31:20.309Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9a/da/85fd510df4403ef7b4844d177dd935a779c6c57ef6d217f308a23fcf52b6/bos_ai-2.3.1.tar.gz", hash = "sha256:27677a74ad2920b00aedf9a9f4ee73f373cd5405db4afa7f754a7e0aed501eda", size = 1262272, upload-time = "2026-10-02T03:18:43.101Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/36/9a/808ee128fe1ccc8be042d41d76fea3be88b22a30db8d97768dcbcfb28918/bos_ai-2.3.0-py3-none-any.whl", hash = "sha256:5143dbe7b1e210c12b4d48d29c7d312c5d2b6af9156a8c093f1f70477b62f3e6", size = 437211, upload-time = "2026-09-26T21:31:18.746Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/8a/af8847bd2292b2805ca33b981b8e9fa2d3266850866588486e5410a75502/bos_ai-2.3.1-py3-none-any.whl", hash = "sha256:4c414968a8c6b16ce3adc9dc651eca3f43f5d78ef3fcbfc23538527a68cd2c00", size = 440067, upload-time = "2026-10-02T03:18:41.048Z" },
 ]
 
 [package.optional-dependencies]
@@ -195,14 +195,14 @@ search = [
 
 [[package]]
 name = "boscli"
-version = "2.3.0"
+version = "2.3.1"
 source = { editable = "." }
 dependencies = [
     { name = "bos-ai", extra = ["cli", "litellm", "search"] },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "bos-ai", extras = ["cli", "litellm", "search"], specifier = "==2.3.0" }]
+requires-dist = [{ name = "bos-ai", extras = ["cli", "litellm", "search"], specifier = "==2.3.1" }]
 
 [[package]]
 name = "boto3"
